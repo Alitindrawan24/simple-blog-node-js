@@ -1,1 +1,38 @@
-<% extend('layouts/app') %> 
+<% extend('layouts/app') %>
+
+    <div id="register">
+        <div class="container pt-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <div class="col-md-12">
+                                <form class="form" action="" method="post">
+                                    <h3 class="text-center">REGISTER</h3>
+                                    <div class="form-group mt-3">
+                                        <label for="text" class="">Full Name:</label><br>
+                                        <input type="text" name="full_name" id="full_name" class="form-control">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="email" class="">Email:</label><br>
+                                        <input type="email" name="email" id="email" class="form-control">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="password" class="">Password:</label><br>
+                                        <input type="password" name="password" id="password" class="form-control">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="password_confirmation" class="">Password Confirmation:</label><br>
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
+                                    </div>
+                                    <div class="text-right mt-3">
+                                        <button type="submit" class="btn btn-dark">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

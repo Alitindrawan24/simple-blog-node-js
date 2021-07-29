@@ -1,7 +1,10 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
 .blog-post {
     color: black;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
 }
 
 .blog-post h6 {

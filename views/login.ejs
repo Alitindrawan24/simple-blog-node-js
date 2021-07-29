@@ -1,1 +1,30 @@
-<% extend('layouts/app') %> 
+<% extend('layouts/app') %>
+
+    <div id="login">
+        <div class="container pt-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <div class="col-md-12">
+                                <form class="form" action="" method="post">
+                                    <h3 class="text-center">LOGIN</h3>
+                                    <div class="form-group mt-3">
+                                        <label for="email" class="">Email:</label><br>
+                                        <input type="email" name="email" id="email" class="form-control">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="password" class="">Password:</label><br>
+                                        <input type="password" name="password" id="password" class="form-control">
+                                    </div>
+                                    <div class="text-right mt-3">
+                                        <button type="submit" class="btn btn-dark">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
