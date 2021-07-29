@@ -1,0 +1,36 @@
+.blog-post {
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.blog-post h6 {
+    font-weight: bold;
+}
+
+.blog-post h5 {
+    font-weight: bold;
+}
+
+.blog-post p {
+    color: grey;
+    font-size: 14px;
+}
+
+.blog-post span {
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.top-right {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.image-post{
+    position: relative;
+}

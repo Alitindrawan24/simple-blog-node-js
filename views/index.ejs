@@ -1,0 +1,37 @@
+<% extend('layouts/app') %>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Welcome to the Blog</h3>
+                        </div>
+                        <div class="panel-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <% for(i=0;i<6;i++){ %> 
+                <div class="col-lg-4 col-12">
+                    <div class="blog-post mt-3">
+                        <div class="image-post">
+                            <img class="img-fluid rounded-3" src="https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp" alt="" srcset="">
+                            <div class="bg-info top-right px-2 py-1">
+                                <div class="text-white">Member Only</div>
+                            </div>
+                        </div>
+                        <h6 class="mt-4">Bussiness
+                            <span>- July 2, 2020</span>
+                        </h6>
+                        <h5>Your most unhappy customers are your greatest source of learning.</h5>
+                        <p class="mt-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </main>
