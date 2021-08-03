@@ -1,14 +1,12 @@
 const express = require('express')
 const router = express.Router()
+
 const RegisterController = require('../controllers/RegisterController');
+const LoginController = require('../controllers/LoginController');
+const IndexController = require('../controllers/IndexController');
 
-router.get('/', (req, res) => {
-    res.render('index.ejs');
-});
-router.get('/login', (req, res) => {
-    res.render('login.ejs');
-});
-
+router.get('/', IndexController.index);
+router.get('/login', LoginController.index);
 router.post('/register', RegisterController.store);
 router.get('/register', RegisterController.index);
 
