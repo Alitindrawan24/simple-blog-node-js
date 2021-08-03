@@ -1,5 +1,15 @@
 const express = require('express')
 const router = express.Router()
+const RegisterController = require('../controllers/RegisterController');
+
+const {
+    body,
+    validationResult
+} = require('express-validator');
+
+const model = require('../models/index');
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 router.get('/', (req, res) => {
     res.render('index.ejs');
@@ -44,8 +54,6 @@ router.post('/register', async (req, res) => {
         }
     }
 });
-router.get('/register', (req, res) => {
-    res.render('register.ejs');
-});
+router.get('/register', RegisterController.index);
 
 module.exports = router
