@@ -2,17 +2,19 @@
 const {
     Model
 } = require('sequelize');
-const { v4: uuid } = require('uuid');
+const {
+    v4: uuid
+} = require('uuid');
 module.exports = (sequelize, DataTypes) => {
 
-    
+
     class User extends Model {
         /**
          * Helper method for defining associations.
          * This method is not a part of Sequelize lifecycle.
          * The `models/index` file will call this method automatically.
          */
-        
+
         static associate(models) {
             // define association here
         }
@@ -27,13 +29,31 @@ module.exports = (sequelize, DataTypes) => {
                 notNull: true
             }
         },
-        fullName: DataTypes.STRING,
-        email: DataTypes.STRING,
-        password: DataTypes.STRING
+        fullName: {
+            allowNull: false,
+            type: DataTypes.STRING,
+            validate: {
+                notNull: true
+            }
+        },
+        email: {
+            allowNull: false,
+            type: DataTypes.STRING,
+            validate: {
+                notNull: true
+            }
+        },
+        password: {
+            allowNull: false,
+            type: DataTypes.STRING,
+            validate: {
+                notNull: true
+            }
+        }
     }, {
         sequelize,
         modelName: 'User',
     });
-    
+
     return User;
 };
